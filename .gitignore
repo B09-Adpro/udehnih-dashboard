@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Experimental Feign Stuff
+src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/controller/TestController.java
+src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/dto/Post.java
+src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/feign/TestFeign.java
+src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/service/TestService.java
