@@ -1,5 +1,6 @@
 package id.ac.ui.cs.advprog.udehnihdashboard.dto;
 
+import id.ac.ui.cs.advprog.udehnihdashboard.enums.PaymentStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
