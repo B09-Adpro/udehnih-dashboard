@@ -25,6 +25,8 @@ public class PaymentListResponseTest {
         List<Payment> paymentList = new ArrayList<Payment>();
         paymentList.add(payment1);
         paymentList.add(payment2);
+
+        this.paymentListResponse = new PaymentListResponse();
         this.paymentListResponse.setPaymentList(paymentList);
     }
 
