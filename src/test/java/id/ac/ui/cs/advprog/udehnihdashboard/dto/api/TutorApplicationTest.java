@@ -1,4 +1,4 @@
-package id.ac.ui.cs.advprog.udehnihdashboard.dto;
+package id.ac.ui.cs.advprog.udehnihdashboard.dto.api;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

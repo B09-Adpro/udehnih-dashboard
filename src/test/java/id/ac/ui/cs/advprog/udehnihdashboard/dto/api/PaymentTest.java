@@ -1,4 +1,4 @@
-package id.ac.ui.cs.advprog.udehnihdashboard.dto;
+package id.ac.ui.cs.advprog.udehnihdashboard.dto.api;
 
 import id.ac.ui.cs.advprog.udehnihdashboard.enums.PaymentStatus;
 import id.ac.ui.cs.advprog.udehnihdashboard.enums.PaymentMethod;
