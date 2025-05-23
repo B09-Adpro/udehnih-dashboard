@@ -5,6 +5,6 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class TutorApplicationListResponse {
-    private List<TutorApplication> applicationList;
+public class TutorApplicationsResponse {
+    private List<TutorApplication> applications;
 }

@@ -9,8 +9,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TutorApplicationListResponseTest {
-    private TutorApplicationListResponse tutorApplicationListResponse;
+public class TutorApplicationsResponseTest {
+    private TutorApplicationsResponse tutorApplicationsResponse;
     private TutorApplication tutorApplication1;
     private TutorApplication tutorApplication2;
 
@@ -25,13 +25,13 @@ public class TutorApplicationListResponseTest {
         applicationList.add(tutorApplication1);
         applicationList.add(tutorApplication2);
 
-        this.tutorApplicationListResponse = new TutorApplicationListResponse();
-        this.tutorApplicationListResponse.setApplicationList(applicationList);
+        this.tutorApplicationsResponse = new TutorApplicationsResponse();
+        this.tutorApplicationsResponse.setApplications(applicationList);
     }
 
     @Test
     void testGetAttributes(){
-        List<TutorApplication> applicationList = tutorApplicationListResponse.getApplicationList();
+        List<TutorApplication> applicationList = tutorApplicationsResponse.getApplications();
         Iterator<TutorApplication> iterator = applicationList.iterator();
 
         TutorApplication application = iterator.next();
