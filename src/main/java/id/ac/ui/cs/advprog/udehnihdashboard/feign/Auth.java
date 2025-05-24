@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(name="auth", url="https://udehnih-please-bisa-env.eba-uvfzaim3.us-east-1.elasticbeanstalk.com/")
+@FeignClient(name="auth", url="auth-temp.com")
 public interface Auth {
 
     @RequestMapping(method = RequestMethod.GET, value="/api/users/{userId}")
