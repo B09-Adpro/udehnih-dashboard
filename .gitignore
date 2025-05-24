@@ -41,3 +41,6 @@ src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/controller/TestController.jav
 src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/dto/Post.java
 src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/feign/TestFeign.java
 src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/service/TestService.java
+
+### Testing Stuff
+src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/testings
