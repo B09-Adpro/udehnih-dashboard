@@ -44,3 +44,6 @@ src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/service/TestService.java
 
 ### Testing Stuff
 src/main/java/id/ac/ui/cs/advprog/udehnihdashboard/testings
+
+### ENV
+.env
