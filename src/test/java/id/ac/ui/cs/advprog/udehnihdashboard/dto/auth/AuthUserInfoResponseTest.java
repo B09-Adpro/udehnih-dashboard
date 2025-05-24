@@ -7,11 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class AuthUserInfoResponseTest {
 
-    private UserInfo userInfo;
+    private AuthUserInfoResponse userInfo;
 
     @BeforeEach
     public void setUp() {
-        this.userInfo = new UserInfo();
+        this.userInfo = new AuthUserInfoResponse();
         this.userInfo.setId("user123");
         this.userInfo.setEmail("test@example.com");
         this.userInfo.setName("John Doe");
