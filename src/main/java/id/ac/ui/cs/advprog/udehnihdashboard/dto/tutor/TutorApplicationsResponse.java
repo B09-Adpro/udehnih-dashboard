@@ -6,5 +6,5 @@ import java.util.List;
 
 @Data
 public class TutorApplicationsResponse {
-    private List<TutorApplicationResponse> applications;
+    private List<TutorApplication> applications;
 }

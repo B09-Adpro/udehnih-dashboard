@@ -6,7 +6,7 @@ import lombok.Data;
 import java.time.LocalDateTime;
 
 @Data
-public class TutorApplicationResponse {
+public class TutorApplication {
     private long applicationId;
     private String studentId;
     private String experience;

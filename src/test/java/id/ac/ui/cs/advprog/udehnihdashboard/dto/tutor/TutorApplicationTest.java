@@ -8,14 +8,14 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TutorApplicationResponseTest {
+public class TutorApplicationTest {
 
-    private TutorApplicationResponse tutorApplicationResponse;
+    private TutorApplication tutorApplicationResponse;
     private LocalDateTime time;
 
     @BeforeEach
     public void setUp() {
-        this.tutorApplicationResponse = new TutorApplicationResponse();
+        this.tutorApplicationResponse = new TutorApplication();
         tutorApplicationResponse.setApplicationId(123L);
         tutorApplicationResponse.setStudentId("student123");
         tutorApplicationResponse.setExperience("old");
