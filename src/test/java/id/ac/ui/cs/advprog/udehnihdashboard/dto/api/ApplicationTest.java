@@ -1,13 +1,17 @@
 package id.ac.ui.cs.advprog.udehnihdashboard.dto.api;
 
+import id.ac.ui.cs.advprog.udehnihdashboard.enums.ApplicationStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ApplicationTest {
 
     private Application application;
+    private LocalDateTime time;
 
     @BeforeEach
     void setUp() {
@@ -18,8 +22,10 @@ public class ApplicationTest {
         this.application.setEmail("john@example.com");
         this.application.setExperience("rookie");
         this.application.setQualifications("have internet");
-        this.application.setStatus("PENDING");
-        this.application.setSubmittedAt("2023-05-15T10:30:00Z");
+        this.application.setStatus(ApplicationStatus.PENDING);
+
+        time = LocalDateTime.now();
+        this.application.setSubmittedAt(time);
     }
 
     @Test
@@ -30,8 +36,8 @@ public class ApplicationTest {
         assertEquals("john@example.com", this.application.getEmail());
         assertEquals("rookie", this.application.getExperience());
         assertEquals("have internet", this.application.getQualifications());
-        assertEquals("PENDING", this.application.getStatus());
-        assertEquals("2023-05-15T10:30:00Z", this.application.getSubmittedAt());
+        assertEquals(ApplicationStatus.PENDING, this.application.getStatus());
+        assertEquals(time, this.application.getSubmittedAt());
     }
 
 }
