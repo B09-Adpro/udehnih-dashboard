@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AuthAddRoleResponseTest {
 
@@ -17,7 +18,7 @@ public class AuthAddRoleResponseTest {
     public void setUp() {
         this.response = new AuthAddRoleResponse();
         response.setSuccess(true);
-        response.setMessage("sucess");
+        response.setMessage("success");
         response.setUserId(123L);
         response.setRoleType(RoleType.TUTOR);
 
@@ -27,7 +28,7 @@ public class AuthAddRoleResponseTest {
 
     @Test
     public void testGetAttributes() {
-        assertEquals(true, response.getSuccess());
+        assertTrue(response.getSuccess());
         assertEquals("success", response.getMessage());
         assertEquals(123L, response.getUserId());
         assertEquals(RoleType.TUTOR, response.getRoleType());
