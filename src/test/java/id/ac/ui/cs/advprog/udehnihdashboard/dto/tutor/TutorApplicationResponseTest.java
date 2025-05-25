@@ -1,5 +1,6 @@
 package id.ac.ui.cs.advprog.udehnihdashboard.dto.tutor;
 
+import id.ac.ui.cs.advprog.udehnihdashboard.enums.ApplicationStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +15,7 @@ public class TutorApplicationResponseTest {
 
     @BeforeEach
     public void setUp() {
-        this.tutorApplicationResponse = new TutorApplicationResponse;
+        this.tutorApplicationResponse = new TutorApplicationResponse();
         tutorApplicationResponse.setApplicationId(123L);
         tutorApplicationResponse.setStudentId("student123");
         tutorApplicationResponse.setExperience("old");
