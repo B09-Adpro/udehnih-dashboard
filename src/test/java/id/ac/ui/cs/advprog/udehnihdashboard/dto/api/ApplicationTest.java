@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TutorApplicationTest {
+public class ApplicationTest {
 
-    private TutorApplication application;
+    private Application application;
 
     @BeforeEach
     void setUp() {
-        this.application = new TutorApplication();
+        this.application = new Application();
         this.application.setApplicationId("application123");
         this.application.setUserId("user123");
         this.application.setName("John Doe");

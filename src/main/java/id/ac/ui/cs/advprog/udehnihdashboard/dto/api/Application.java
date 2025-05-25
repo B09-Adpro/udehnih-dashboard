@@ -3,7 +3,7 @@ package id.ac.ui.cs.advprog.udehnihdashboard.dto.api;
 import lombok.Data;
 
 @Data
-public class TutorApplication {
+public class Application {
     private String applicationId;
     private String userId;
     private String name;
