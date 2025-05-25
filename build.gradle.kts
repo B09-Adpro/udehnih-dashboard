@@ -91,14 +91,14 @@ tasks.test {
         excludeTestsMatching("*FunctionalTest")
     }
 
-//    finalizedBy(tasks.jacocoTestReport)
+    finalizedBy(tasks.jacocoTestReport)
 }
 
-//tasks.jacocoTestReport {
-//    dependsOn(tasks.test)
-//    reports {
-//        xml.required = true
-//        csv.required = true
-//        html.required = true
-//    }
-//}
+tasks.jacocoTestReport {
+    dependsOn(tasks.test)
+    reports {
+        xml.required = true
+        csv.required = true
+        html.required = true
+    }
+}
