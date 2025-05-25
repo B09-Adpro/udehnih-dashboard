@@ -7,7 +7,7 @@ import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import javax.crypto.SecretKey;
+import java.security.Key;
 
 @Component
 public class JwtUtil {
@@ -15,7 +15,7 @@ public class JwtUtil {
     @Value("${jwt.secret-key}")
     private String secretKey;
 
-    private SecretKey key;
+    private Key key;
 
     @PostConstruct
     public void init() {
