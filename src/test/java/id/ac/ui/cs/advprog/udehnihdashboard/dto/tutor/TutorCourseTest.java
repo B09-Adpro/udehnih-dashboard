@@ -1,10 +1,10 @@
 package id.ac.ui.cs.advprog.udehnihdashboard.dto.tutor;
 
+import id.ac.ui.cs.advprog.udehnihdashboard.enums.CourseStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -26,7 +26,7 @@ public class TutorCourseTest {
         course.setCreatedAt(time);
         course.setUpdatedAt(time);
 
-        course.setStatus(CourseStatus.PENDING);
+        course.setStatus(CourseStatus.PENDING_REVIEW);
         course.setSectionCount(3);
         course.setArticleCount(5);
     }
@@ -40,7 +40,7 @@ public class TutorCourseTest {
         assertEquals("tutor123", course.getTutorId());
         assertEquals(time, course.getCreatedAt());
         assertEquals(time, course.getUpdatedAt());
-        assertEquals(CourseStatus.PENDING, course.getStatus());
+        assertEquals(CourseStatus.PENDING_REVIEW, course.getStatus());
         assertEquals(3, course.getSectionCount());
         assertEquals(5, course.getArticleCount());
     }
