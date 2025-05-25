@@ -4,8 +4,7 @@ import id.ac.ui.cs.advprog.udehnihdashboard.config.FeignConfig;
 import id.ac.ui.cs.advprog.udehnihdashboard.dto.tutor.TutorApplicationsResponse;
 import id.ac.ui.cs.advprog.udehnihdashboard.enums.ApplicationStatus;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(
@@ -14,9 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 )
 public interface Tutor {
 
-    @RequestMapping(method= RequestMethod.GET, value="/api/internal/tutor-applicaiotns")
+    @GetMapping("/api/internal/tutor-applicaiotns")
     TutorApplicationsResponse getAllTutorApplications(
-            @RequestParam(value="status", required=false)ApplicationStatus status
-    );
+            @RequestParam(value="status", required=false) ApplicationStatus status);
 
 }
