@@ -15,13 +15,13 @@ public class UpdateApplicationResponseTest {
         response = new UpdateApplicationResponse();
         response.setMessage("test");
         response.setStatus(ApplicationStatus.ACCEPTED);
-        response.setUserId("useri123");
+        response.setApplicationId("useri123");
     }
 
     @Test
     public void testGetAttributes() {
         assertEquals("test", response.getMessage());
         assertEquals(ApplicationStatus.ACCEPTED, response.getStatus());
-        assertEquals("useri123", response.getUserId());
+        assertEquals("useri123", response.getApplicationId());
     }
 }

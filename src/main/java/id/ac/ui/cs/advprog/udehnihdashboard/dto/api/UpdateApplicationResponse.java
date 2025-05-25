@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 public class UpdateApplicationResponse {
     private String message;
-    private String userId;
+    private String applicationId;
     private ApplicationStatus status;
 }
