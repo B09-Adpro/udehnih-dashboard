@@ -1,4 +1,4 @@
-package id.ac.ui.cs.advprog.udehnihdashboard.feign;
+package id.ac.ui.cs.advprog.udehnihdashboard.client;
 
 import id.ac.ui.cs.advprog.udehnihdashboard.dto.auth.AuthUserInfoResponse;
 import org.springframework.cloud.openfeign.FeignClient;
