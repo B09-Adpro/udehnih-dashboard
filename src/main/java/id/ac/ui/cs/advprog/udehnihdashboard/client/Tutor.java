@@ -2,9 +2,11 @@ package id.ac.ui.cs.advprog.udehnihdashboard.client;
 
 import id.ac.ui.cs.advprog.udehnihdashboard.config.FeignConfig;
 import id.ac.ui.cs.advprog.udehnihdashboard.dto.tutor.TutorApplicationsResponse;
+import id.ac.ui.cs.advprog.udehnihdashboard.dto.tutor.TutorUpdateApplicationRequest;
 import id.ac.ui.cs.advprog.udehnihdashboard.enums.ApplicationStatus;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(
@@ -15,6 +17,12 @@ public interface Tutor {
 
     @GetMapping("/api/internal/tutor-applicaiotns")
     TutorApplicationsResponse getAllTutorApplications(
-            @RequestParam(value="status", required=false) ApplicationStatus status);
+            @RequestParam(value="status", required=false) ApplicationStatus status
+    );
 
+    @GetMapping("/api/internal/{applicationId}/status")
+    void updateApplicationStatus(
+            @PathVariable("applicationId") Long applicationId,
+            TutorUpdateApplicationRequest request
+    );
 }
