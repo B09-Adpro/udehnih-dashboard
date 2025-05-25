@@ -12,7 +12,7 @@ public class TutorUpdateCourseRequestTest {
 
     @BeforeEach
     public void setUp() {
-        this.request = new TutorUpdateCourseRequest;
+        this.request = new TutorUpdateCourseRequest();
         request.setNewStatus(CourseStatus.PUBLISHED);
         request.setFeedback("very nice");
     }
