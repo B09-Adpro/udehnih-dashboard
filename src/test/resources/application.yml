@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT}
+
+spring:
+  application:
+    name: udehnih-dashboard
+
+jwt:
+  secret-key: ${JWT_SECRET_KEY}
+  expiration: 3600000
+  refresh-expiration: 72000000
+
+services:
+  auth:
+    baseurl: ${AUTH_SERVICE_URL_LOCAL}
