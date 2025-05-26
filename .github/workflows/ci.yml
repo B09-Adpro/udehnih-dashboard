@@ -5,6 +5,12 @@ on:
       - main
       - ci-cd
 
+env:
+  JWT_SECRET_KEY: ${{ secrets.JWT_SECRET_KEY }}
+  JWT_EXPIRATION: ${{ secrets.JWT_EXPIRATION }}
+  JWT_REFRESH_EXPIRATION: ${{ secrets.JWT_REFRESH_EXPIRATION }}
+  SERVER_PORT: ${{ secrets.SERVER_PORT }}
+
 jobs:
   test:
     name: Run tests
@@ -24,8 +30,3 @@ jobs:
         run: ./gradlew clean build
       - name: Run unit tests
         run:  ./gradlew test
-        env:
-          JWT_SECRET_KEY: ${{ secrets.JWT_SECRET_KEY }}
-          JWT_EXPIRATION: ${{ secrets.JWT_EXPIRATION }}
-          JWT_REFRESH_EXPIRATION: ${{ secrets.JWT_REFRESH_EXPIRATION }}
-          SERVER_PORT: ${{ secrets.SERVER_PORT }}
