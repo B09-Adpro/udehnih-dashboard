@@ -3,6 +3,7 @@ plugins {
     jacoco
     id("org.springframework.boot") version "3.4.4"
     id("io.spring.dependency-management") version "1.1.7"
+    id("org.sonarqube") version "6.0.1.5171"
 }
 
 group = "id.ac.ui.cs.advprog"
@@ -54,6 +55,14 @@ dependencies {
     testImplementation("io.github.bonigarcia:selenium-jupiter:$seleniumJupiterVersion")
     testImplementation("io.github.bonigarcia:webdrivermanager:$webdrivermanagerVersion")
     testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
+}
+
+sonar {
+    properties {
+        property("sonar.projectKey", "B09-Adpro_udehnih-dashboard")
+        property("sonar.organization", "b09-adpro")
+        property("sonar.host.url", "https://sonarcloud.io")
+    }
 }
 
 extra["springCloudVersion"] = "2024.0.1"
